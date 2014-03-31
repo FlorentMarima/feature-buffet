@@ -11,7 +11,7 @@ The ```featbuff```tool is written is Perl (5, version 16). (Do not ask why !)
  
 #### Example
 Let's say we have a javascript library file "input.js", such as :
-```javascript
+```java
 var featureA = function (params) {
     // Impl of feature A
 }
@@ -61,7 +61,7 @@ featbuff --add B;
 ```
 
 Finaly, when running ``featbuff``, the output.js generated should look like :
-```
+```javascript
 var featureA = function (params) {
     // Impl of feature A
 }
