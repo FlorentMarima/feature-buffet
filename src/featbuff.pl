@@ -41,14 +41,14 @@ my @opt_set 	= ();
 my $opt_help 	= 0;
 my $opt_version = 0;
 
-Getopt::Long::GetOptions("add=s" 			=> \$opt_add,
-						 "del=s"			=> \$opt_del,
-						 "load=s{2}"		=> \@opt_load,
-						 "set=s{2}"			=> \@opt_set,
-						 "version"			=> \$opt_version,
-						 "init"				=> \$opt_init,
-						 "help"				=> \$opt_help,
-						 "info"				=> \$opt_help)
+Getopt::Long::GetOptions("add=s" 	=> \$opt_add,
+			"del=s"		=> \$opt_del,
+			"load=s{2}"	=> \@opt_load,
+			"set=s{2}"	=> \@opt_set,
+			"version"	=> \$opt_version,
+			"init"		=> \$opt_init,
+			"help"		=> \$opt_help,
+			"info"		=> \$opt_help)
 	or die("Bad params. Try --help !\n");
 
 my $configuration = undef;
