@@ -11,7 +11,7 @@ The ```featbuff```tool is written is Perl (5, version 16). (Do not ask why !)
  
 #### Example
 Let's say we have a javascript library file "input.js", such as :
-```
+```javascript
 var featureA = function (params) {
     // Impl of feature A
 }
@@ -25,7 +25,7 @@ var featureC = function (params) {
 }
 ```
 What we want to do is annotate each "part" of the file such as
-```
+```javascript
 @start labelOfFeatureA
 var featureA = function (params) {
     // Impl of feature A
